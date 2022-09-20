@@ -1,9 +1,11 @@
 {
-  "name": "Figma Frames to CSV",
-  "id": "1091265106774177196",
+  "name": "Frames2CSV",
+  "id": "1154125992214951163",
   "api": "1.0.0",
   "ui": "ui.html",
   "main": "code.js",
-  "enablePrivatePluginApi": false,
-  "editorType": ["figma"]
+  "enablePrivatePluginApi": true,
+  "editorType": [
+    "figma"
+  ]
 }

@@ -1,22 +1,40 @@
-<p align='center'>
-	<img src="https://raw.githubusercontent.com/saadh393/FigmaFramesToCSV/main/cover.png" alt="Figma Frames to CSV"/>
-</p>
+Below are the steps to get your plugin running. You can also find instructions at:
 
-# Figma Frames to CSV
+  https://www.figma.com/plugin-docs/setup/
 
-Many cases we need to share the **Figma** links of frames separately. This plugin will give you a separate list of **visible** frames. Even if there is a way to export the list as CSV file.
-Check it out - [Figma Frames to CSV](https://www.figma.com/community/plugin/1091265106774177196)
+This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
 
-## Features
+First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
+libraries. You can find the download link here:
 
-This is a beta release of this project. Feel free to contribute and add new features. Currently the shortlist of features are -
+  https://nodejs.org/en/download/
 
-- Export the whole list as CSV
-- Copy link by clicking on the input field
-- Support
+Next, install TypeScript using the command:
 
-<!-- CONTACT -->
+  npm install -g typescript
 
-## Contact
+Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
 
-Saad Hasan - [https://saadh393.github.io/](https://saadh393.github.io/)
+  npm install --save-dev @figma/plugin-typings
+
+If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
+is already valid Typescript code.
+
+TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
+to provide information about the Figma API while you are writing code, as well as help catch bugs
+you previously didn't notice.
+
+For more information, visit https://www.typescriptlang.org/
+
+Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
+for the browser to run.
+
+We recommend writing TypeScript code using Visual Studio code:
+
+1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
+2. Open this directory in Visual Studio Code.
+3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
+    then select "npm: watch". You will have to do this again every time
+    you reopen Visual Studio Code.
+
+That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
